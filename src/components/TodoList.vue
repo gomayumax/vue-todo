@@ -1,7 +1,7 @@
 <template>
     <ul>
-        <li v-for="item in items">
-            {{ item.text }}
+        <li v-for="todo in todoList">
+            {{ todo.text }}
         </li>
     </ul>
 </template>
@@ -9,14 +9,7 @@
 <script>
 export default {
   name: 'todo-list',
-  data: function () {
-    return {
-      items: [
-        {text: 'Foo'},
-        {text: 'Bar'}
-      ]
-    }
-  }
+  props: ['todoList']
 }
 </script>
 

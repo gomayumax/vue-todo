@@ -1,5 +1,5 @@
 <template>
-    <b-field label="Name">
+    <b-field label="Todo: ">
         <b-input></b-input>
     </b-field>
 </template>

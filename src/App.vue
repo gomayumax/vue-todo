@@ -2,12 +2,12 @@
     <div id="app">
         <div class="colums">
             <div class="column is-half is-offset-one-quarter">
-                <input-form></input-form>
+                <input-form ></input-form>
             </div>
         </div>
         <div class="colums">
             <div class="column is-half is-offset-one-quarter">
-                <todo-list></todo-list>
+                <todo-list :todoList="todoList"></todo-list>
             </div>
         </div>
     </div>
@@ -25,8 +25,13 @@ export default {
     InputForm,
     TodoList
   },
-  data: {
-    newTodo: ''
+  data: function () {
+    return {
+      todoList: [
+        {text: 'goma'}
+      ],
+      newTodo: ''
+    }
   }
 }
 </script>
