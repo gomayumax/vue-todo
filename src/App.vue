@@ -2,7 +2,7 @@
     <div id="app">
         <div class="colums">
             <div class="column is-half is-offset-one-quarter">
-                <input-form ></input-form>
+                <input-form @addTodo="addTodo"></input-form>
             </div>
         </div>
         <div class="colums">
@@ -29,8 +29,14 @@ export default {
     return {
       todoList: [
         {text: 'goma'}
-      ],
-      newTodo: ''
+      ]
+    }
+  },
+  methods: {
+    addTodo: function (todo) {
+      this.todoList.push({
+        text: todo
+      })
     }
   }
 }
