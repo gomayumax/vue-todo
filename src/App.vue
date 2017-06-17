@@ -28,14 +28,15 @@ export default {
   data: function () {
     return {
       todoList: [
-        {text: 'goma'}
+        {text: 'goma', done: false}
       ]
     }
   },
   methods: {
     addTodo: function (todo) {
       this.todoList.push({
-        text: todo
+        text: todo,
+        done: false
       })
     }
   }
