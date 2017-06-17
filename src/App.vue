@@ -20,14 +20,12 @@
 </template>
 
 <script>
-  import Hello from './components/Hello'
   import InputForm from './components/InputForm'
   import TodoList from './components/TodoList'
 
   export default {
     name: 'app',
     components: {
-      Hello,
       InputForm,
       TodoList
     },
