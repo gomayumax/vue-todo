@@ -1,9 +1,11 @@
 <template>
-    <b-field label="Todo: ">
+    <b-field label="Todo">
         <b-input placeholder="todoを入力してください"
                  v-model="newTodo"
         ></b-input>
-        <button @click="addTodo">add</button>
+        <p class="control">
+            <button class="button is-primary" @click="addTodo">add</button>
+        </p>
     </b-field>
 </template>
 
