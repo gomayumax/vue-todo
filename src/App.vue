@@ -1,17 +1,32 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
-  </div>
+    <div id="app">
+        <div class="colums">
+            <div class="column is-half is-offset-one-quarter">
+                <input-form></input-form>
+            </div>
+        </div>
+        <div class="colums">
+            <div class="column is-half is-offset-one-quarter">
+                <todo-list></todo-list>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
+import InputForm from './components/InputForm'
+import TodoList from './components/TodoList'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Hello,
+    InputForm,
+    TodoList
+  },
+  data: {
+    newTodo: ''
   }
 }
 </script>
